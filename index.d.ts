@@ -63,7 +63,7 @@ export type ActionFunctions<Payload> = BaseActionFunctions<Action<Payload>>;
 
 export type ActionWithMetaFunctions<Payload, Meta> = BaseActionFunctions<ActionMeta<Payload, Meta>>;
 
-export type Reducer<State, Payload> = (state: State, action: Action<Payload>|ActionB<Payload>) => State;
+export type Reducer<State, Payload> = (state: State, action: ActionB<Payload>|Action<Payload>) => State;
 
 export type ReducerMeta<State, Payload, Meta> = (state: State, action: ActionMeta<Payload, Meta>) => State;
 
